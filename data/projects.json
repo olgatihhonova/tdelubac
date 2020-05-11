@@ -1,0 +1,17 @@
+[
+    {"name": "H2GO", "category": "Web", "weight": 1, "url": "https://www.tdelubac.com/h2go/", "image": "../images/h2go-1024x683.png"},
+
+    {"name": "TheWorldIsYours", "category": "Python", "weight": 1, "url": "https://www.tdelubac.com/", "image": "../images/theworldisyours-1024x768.jpg"},
+    {"name": "FindingTheBalance", "category": "Python", "weight": 1, "url": "https://www.tdelubac.com/", "image": "../images/balance-1024x768.jpg"},
+    {"name": "TheRiseOfDataScientist", "category": "Python", "weight": 1, "url": "https://www.tdelubac.com", "image": "../images/rise-1024x768.jpg"},
+    {"name": "BlowYourOwnTrumpet", "category": "Python", "weight": 1, "url": "https://www.tdelubac.com", "image": "../images/trumpet-1024x620.png"},
+
+    {"name": "FindingTheBalance", "category": "Deep Learning", "weight": 1, "url": "https://www.tdelubac.com/", "image": "../images/balance-1024x768.jpg"},
+
+    {"name": "H2GO", "category": "DataViz", "weight": 1, "url": "https://www.tdelubac.com/h2go/", "image": "../images/h2go-1024x683.png"},
+    {"name": "BlowYourOwnTrumpet", "category": "DataViz", "weight": 1, "url": "https://www.tdelubac.com", "image": "../images/trumpet-1024x620.png"},
+    {"name": "TheRiseOfDataScientist", "category": "DataViz", "weight": 1, "url": "https://www.tdelubac.com", "image": "../images/rise-1024x768.jpg"},
+    {"name": "TheWorldIsYours", "category": "DataViz", "weight": 1, "url": "https://www.tdelubac.com/", "image": "../images/theworldisyours-1024x768.jpg"},
+
+    {"name": "TheUniverseInYourHands", "category": "3D Printing", "weight": 1, "url": "https://www.tdelubac.com", "image": "../images/cmb-1024x768.jpg"}
+]

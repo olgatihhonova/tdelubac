@@ -1,0 +1,10 @@
+name,planet_radius,orbit_radius,period,theta_init
+Sun,18,0,0,1
+Mercure,2,30,2,2
+Venus,3,40,5,3
+Earth,4,50,7,0
+Mars,4,60,15,2.4
+Jupyter,15,90,40,3.1
+Saturn,12,130,60,0.3
+Uranus,9,170,100,0.9
+Neptune,8,210,120,2.6
