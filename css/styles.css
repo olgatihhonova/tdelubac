@@ -407,8 +407,8 @@ $("#about h1").css("color", "#0666B9"); */
 }
 
 main {
-  /* position: relative; /* required for z-index: -1 */ */
-  /* z-index: 100; /* so that the menu stays in front */ */
+  /* position: relative; /* required for z-index: -1 */
+  /* z-index: 100; /* so that the menu stays in front */
   /* width: 100%; */
   /* display: flex; */
   /* flex-direction: column; */
@@ -429,8 +429,9 @@ main p {
 }
 
 main article {
-  /* position: absolute; */
   /* height: 0vh; */
+  position: relative;
+  z-index: 100;
   width: 60%;
   /* margin-top: 6vh; */
   /* margin-left: 20%; */
@@ -508,7 +509,7 @@ main article {
 #contact h1,
 #contact strong,
 #contact a{
-    color: #6a4c93;
+  color: #6a4c93;
 }
 
 .footer-contact a {
@@ -554,6 +555,8 @@ footer ul {
   /* justify-content: space-between; */
   /* flex-wrap: wrap; */
   /* margin: 0 auto; */
+  position: relative;
+  z-index: 100;
   margin: 0;
   font-size: 20px;
   list-style: none;
