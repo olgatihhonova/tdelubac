@@ -10,38 +10,11 @@ const $nav = $('header').children('nav'),
       $filler_span = $table.find('.filler'),
       $dixi_span = $table.find('.dixi'),
       $contact = $('.ref-contact'),
+      $delayed_a = $('.delay'),
       $fading_elements = $('.fadeIn');
 
-
-// prevent Safari from jumping at the end
-// of transition on (translate and letter-spacing)
-// if container width is not explicitely fixed
-
-// hardcode the width in px equal to auto width
-// as computed by browser
-// $tbody.css('width', 'auto');
-// // $tbody.css('width', $tbody.width());
-// setTimeout(() => {
-//  $tbody.css('width', $tbody.width());
-// }, 100);
-//
-// // adapt the hardcoded width when window is resized
-// let resizeTimer;
-// $(window).resize( () => {
-//
-//   // lef the width be auto during the resize event
-//   $tbody.css('width', 'auto');
-//   // hardcode the width at the end of resize event
-//   // timeout should be set equal to animation duration
-//   clearTimeout(resizeTimer);
-//   resizeTimer = setTimeout(() => {
-//     $tbody.css('width', $tbody.width());
-//   }, 1500);
-// });
-
-
 // delay page transition
-$('a').click(function(event){
+$delayed_a.click(function(event){
     event.preventDefault();
     var link = $(this).attr('href');
     setTimeout(function() {
