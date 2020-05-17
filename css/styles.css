@@ -487,12 +487,20 @@ main article {
   color: #0D9099;
 }
 
+.footer-ds a {
+  background-image: linear-gradient(to right, #0D9099 50%, rgba(255, 255, 255, 0) 50%);
+}
+
 .footer-phd a,
 .footer-phd strong,
-#phd h1
+#phd h1,
 #phd strong,
 #phd a{
   color: #F8C987;
+}
+
+.footer-phd a {
+  background-image: linear-gradient(to right, #F8C987 50%, rgba(255, 255, 255, 0) 50%);
 }
 
 #publi {
