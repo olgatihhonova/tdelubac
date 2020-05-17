@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-
+  
 }
 
 h1 {
@@ -404,7 +404,7 @@ $("#about h1").css("color", "#0666B9"); */
 
 
 main {
-  position: relative; /* required for z-index: -1 */
+  /* position: relative; /* required for z-index: -1 */ */
   /* z-index: 100; /* so that the menu stays in front */ */
   /* width: 100%; */
   /* display: flex; */
@@ -412,7 +412,6 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: -1;
 }
 
 main span {
@@ -427,16 +426,16 @@ main p {
 }
 
 main article {
-  position: absolute;
+  /* position: absolute; */
   /* height: 0vh; */
   width: 60%;
   /* margin-top: 6vh; */
   /* margin-left: 20%; */
   /* margin-right: 20%; */
-  opacity: 0;
+  /* opacity: 0; */
   text-align: center;
   transition: opacity 0.5s;
-  overflow: hidden;
+  /* overflow: hidden; */
   align-items: center;
   /* font-family: Josefin; */
   background-color: rgba(255, 255, 255, 0.5);
