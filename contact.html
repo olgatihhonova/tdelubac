@@ -1,33 +1,82 @@
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Timothée Delubac | PhD</title>
-    <meta name="description" content="Timothée Delubac's webpage">
-    <meta name="author" content="Timothée Delubac">
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/d3.v5.min.js"></script>
+  <meta charset="utf-8">
+  <title>Timothée Delubac | PhD</title>
+  <meta name="description" content="Timothée Delubac's webpage">
+  <meta name="author" content="Timothée Delubac">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
+
 <body>
-    <div id="background"></div>
-    <div id="container-outer-shadow">
-        <div id="container-inner-shadow">
-            <div id="header-name-shadow"><h1>T<span>IMOTHEE </span>D<span>ELUBAC</span></h1></div>
-            <div id="hline-shadow"></div>
-            <div id="header-job-shadow"><h1>D<span>ATA </span>S<span>CIENTIST</span></h1></div>
-        </div>
-        <div id="vline-shadow"></div>
-        <div id="header-title-shadow"><h1>P<span>H</span>D</h1></div>
+
+  <div id="background"></div>
+
+  <header>
+
+    <div class="shadow">
+      <table>
+        <tbody>
+          <tr>
+            <td class='name'><h1>
+              <span class='filler'>IMOTHEE ELUBAC</span>
+              T<span>IMOTHEE </span>D<span>ELUBAC</span>
+            </h1></td>
+            <td class='title' rowspan="2"><h1>P<span>H</span>D</h1></td>
+          </tr>
+          <tr>
+            <td class='job'><h1>D<span>ATA </span>S<span>CIENTIST</span></h1></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div id="main">
-        <article id="contact" class="active">
-            <h1>Contact</h1>
-            <p>For any inquiries, send an email at:</p>
-            <p><strong>timothee.delubac [at] protonmail.com</strong></p>
-            <h2>Where to find me?</h2>
-            <div id="solarplot"></div>
-        </article>
-    </div>
-    <script type="text/javascript" src="js/solarplot.js"></script>
+
+    <nav class='no-overflow'>
+        <table class='name_menu'>
+          <tbody class='scale'>
+            <tr>
+              <td class='name hline'><a href="index.html"><h1>
+                <span class='filler'>IMOTHEE ELUBAC</span>
+                T<span class='dixi'>IMOTHEE </span>D<span class='dixi'>ELUBAC</span>
+              </h1></a></td>
+              <td class='title vline' rowspan="2"><a href="#phd"><h1 class='rotate'>P<span>H</span>D</h1></a></td>
+            </tr>
+            <tr>
+              <td class='job'><a href="#data-science"><h1>
+                D<span class='dixi'>ATA </span>S<span class='dixi'>CIENTIST</span>
+              </h1></a></td>
+            </tr>
+          </tbody>
+        </table>
+    </nav>
+
+  </header>
+
+  <main class='fadeIn'>
+    <article id="contact">
+      <h1>C<span>ONTACT</span></h1>
+      <p>For any inquiries, send an email at:</p>
+      <p><strong>timothee.delubac [at] protonmail.com</strong></p>
+      <h2>Where to find me?</h2>
+      <div id="solarplot"></div>
+    </article>
+  </main>
+
+  <footer class='footer-contact fadeIn'>
+    <ul>
+      <li>This website is cookie-free. It is good for your health and your <a target="_blank" href="https://www.privacytools.io/">privacy</a>!</li>
+      <li>Designed by <strong>Tihho</strong>, implemented by <strong>T. Delubac</strong>.</li>
+    </ul>
+  </footer>
+
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/d3.v5.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/solarplot.js"></script>
+
+
 </body>
+
+</html>

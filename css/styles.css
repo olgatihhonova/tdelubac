@@ -503,6 +503,18 @@ main article {
   background-image: linear-gradient(to right, #F8C987 50%, rgba(255, 255, 255, 0) 50%);
 }
 
+.footer-contact a,
+.footer-contact strong,
+#contact h1,
+#contact strong,
+#contact a{
+    color: #6a4c93;
+}
+
+.footer-contact a {
+  background-image: linear-gradient(to right, #6a4c93 50%, rgba(255, 255, 255, 0) 50%);
+}
+
 #publi {
   font-size: 25px;
   text-align: left;
@@ -557,12 +569,6 @@ footer li {
 
 #contact p {
   text-align: center;
-}
-#contact h1, strong, a {
-  /* color: #953888; */
-  /* color: #731B93; */
-  /* color: #E26Cng, #phd a{89; */
-  color: #6a4c93;
 }
 
 #contact h2 {
