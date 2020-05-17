@@ -402,6 +402,9 @@ $("#header-name span").css("letter-spacing","");
 $("#about h1").css("color", "#0666B9"); */
 
 
+.fadeIn {
+  display: none;
+}
 
 main {
   /* position: relative; /* required for z-index: -1 */ */

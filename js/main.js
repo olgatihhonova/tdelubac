@@ -1,7 +1,4 @@
-////////////////////////////////////////
-////////////      Menu      ////////////
-////////////////////////////////////////
-
+$(document).ready(() => {
 
 const $nav = $('header').children('nav'),
       $table = $nav.find('table'),
@@ -11,9 +8,11 @@ const $nav = $('header').children('nav'),
       $title = $table.find('.title'),
       $title_h1 = $title.find('h1'),
       $filler_span = $table.find('.filler'),
-      $dixi_span = $table.find('.dixi');
+      $dixi_span = $table.find('.dixi'),
+      $article_about = $('#about'),
+      $fading_elements = $('.fadeIn');
 
-
+console.log($article_about);
 
 // prevent Safari from jumping at the end
 // of transition on (translate and letter-spacing)
@@ -41,8 +40,24 @@ const $nav = $('header').children('nav'),
 //   }, 1500);
 // });
 
+
+// delay page transition
+$('a').click(function(event){
+    event.preventDefault();
+    var link = $(this).attr('href');
+    console.log(this);
+    setTimeout(function() {
+        window.location.href = link;
+    }, 1500);
+});
+
+// make elements with class fadeIn (main, footer) fade in
+$fading_elements.fadeIn(1500);
+
 // update navigation menu
 function updateMenu(item_menu) {
+  $fading_elements.fadeOut(150);
+
   if (!$table.hasClass('') && !$table.hasClass(item_menu)) {
     $table.removeClass();
     $dixi_span.removeClass('collapse');
@@ -61,8 +76,10 @@ function updateMenu(item_menu) {
   $table.toggleClass(item_menu);
 }
 
-$name.children('a').click( () => {
+$name.children('a').click( (event) => {
   updateMenu('name_menu');
+  // $table.fadeToggle(1500);
+
 });
 
 $job.children('a').click( () => {
@@ -418,3 +435,5 @@ $title.children('a').click( () => {
 //             break;
 //     }
 // }
+
+});
