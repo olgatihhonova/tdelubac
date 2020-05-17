@@ -10,8 +10,8 @@ const $nav = $('header').children('nav'),
       $job = $table.find('.job'),
       $title = $table.find('.title'),
       $title_h1 = $title.find('h1'),
-      $name_span = $name.find('span'),
-      $job_span = $job.find('span');
+      $filler_span = $table.find('.filler'),
+      $dixi_span = $table.find('.dixi');
 
 
 
@@ -21,34 +21,43 @@ const $nav = $('header').children('nav'),
 
 // hardcode the width in px equal to auto width
 // as computed by browser
-$tbody.css('width', 'auto');
-// $tbody.css('width', $tbody.width());
-setTimeout(() => {
- $tbody.css('width', $tbody.width());
-}, 100);
-
-// adapt the hardcoded width when window is resized
-let resizeTimer;
-$(window).resize( () => {
-  // lef the width be auto during the resize event
-  $tbody.css('width', 'auto');
-  // hardcode the width at the end of resize event
-  // timeout should be set equal to animation duration
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    $tbody.css('width', $tbody.width());
-  }, 1500);
-});
+// $tbody.css('width', 'auto');
+// // $tbody.css('width', $tbody.width());
+// setTimeout(() => {
+//  $tbody.css('width', $tbody.width());
+// }, 100);
+//
+// // adapt the hardcoded width when window is resized
+// let resizeTimer;
+// $(window).resize( () => {
+//
+//   // lef the width be auto during the resize event
+//   $tbody.css('width', 'auto');
+//   // hardcode the width at the end of resize event
+//   // timeout should be set equal to animation duration
+//   clearTimeout(resizeTimer);
+//   resizeTimer = setTimeout(() => {
+//     $tbody.css('width', $tbody.width());
+//   }, 1500);
+// });
 
 // update navigation menu
 function updateMenu(item_menu) {
   if (!$table.hasClass('') && !$table.hasClass(item_menu)) {
     $table.removeClass();
+    $dixi_span.removeClass('collapse');
+    $filler_span.removeClass('full');
   } else {
     $tbody.toggleClass('scale');
     $title_h1.toggleClass('rotate');
     $name.toggleClass('hline');
+    $title.toggleClass('vline');
   }
+  if (item_menu === 'title_menu') {
+    $dixi_span.toggleClass('collapse');
+    $filler_span.toggleClass('full');
+  }
+
   $table.toggleClass(item_menu);
 }
 
@@ -62,8 +71,6 @@ $job.children('a').click( () => {
 
 $title.children('a').click( () => {
   updateMenu('title_menu');
-  $name_span.toggleClass('collapse');
-  $job_span.toggleClass('collapse');
 });
 
 
