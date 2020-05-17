@@ -9,7 +9,7 @@ const $nav = $('header').children('nav'),
       $title_h1 = $title.find('h1'),
       $filler_span = $table.find('.filler'),
       $dixi_span = $table.find('.dixi'),
-      $contact = $('#ref-contact'),
+      $contact = $('.ref-contact'),
       $fading_elements = $('.fadeIn');
 
 
