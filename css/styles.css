@@ -403,7 +403,7 @@ $("#about h1").css("color", "#0666B9"); */
 
 
 .fadeIn {
-  display: none;
+  opacity: 0;
 }
 
 main {

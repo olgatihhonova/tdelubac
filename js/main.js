@@ -52,11 +52,12 @@ $('a').click(function(event){
 });
 
 // make elements with class fadeIn (main, footer) fade in
-$fading_elements.fadeIn(1500);
+$fading_elements.animate({opacity: 1}, 1500);
+
 
 // update navigation menu
 function updateMenu(item_menu) {
-  $fading_elements.fadeOut(150);
+  $fading_elements.animate({opacity: 0}, 150);
 
   if (!$table.hasClass('') && !$table.hasClass(item_menu)) {
     $table.removeClass();
