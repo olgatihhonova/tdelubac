@@ -22,6 +22,16 @@ $delayed_a.click(function(event){
     }, 1500);
 });
 
+// reload page while hitting back browser button
+window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted ||
+                         ( typeof window.performance != "undefined" &&
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    window.location.reload(true);
+  }
+});
+
 // make elements with class fadeIn (main, footer) fade in
 $fading_elements.animate({opacity: 1}, 1500);
 
@@ -48,21 +58,28 @@ function updateMenu(item_menu) {
   $table.toggleClass(item_menu);
 }
 
+// go to about page
 $name.children('a').click( () => {
   updateMenu('name_menu');
 });
 
+// go to data science page
 $job.children('a').click( () => {
   updateMenu('job_menu');
 });
 
+// go to phd page
 $title.children('a').click( () => {
   updateMenu('title_menu');
 });
 
+// go to contact page
 $contact.find('a').click( () => {
   updateMenu('contact_menu');
 });
+
+
+
 
 
 // function classReset(class1, class2) {
