@@ -9,10 +9,9 @@ const $nav = $('header').children('nav'),
       $title_h1 = $title.find('h1'),
       $filler_span = $table.find('.filler'),
       $dixi_span = $table.find('.dixi'),
-      $article_about = $('#about'),
+      $contact = $('#ref-contact'),
       $fading_elements = $('.fadeIn');
 
-console.log($article_about);
 
 // prevent Safari from jumping at the end
 // of transition on (translate and letter-spacing)
@@ -45,7 +44,6 @@ console.log($article_about);
 $('a').click(function(event){
     event.preventDefault();
     var link = $(this).attr('href');
-    console.log(this);
     setTimeout(function() {
         window.location.href = link;
     }, 1500);
@@ -69,7 +67,7 @@ function updateMenu(item_menu) {
     $name.toggleClass('hline');
     $title.toggleClass('vline');
   }
-  if (item_menu === 'title_menu') {
+  if (item_menu === 'title_menu' || item_menu === 'contact_menu') {
     $dixi_span.toggleClass('collapse');
     $filler_span.toggleClass('full');
   }
@@ -77,10 +75,8 @@ function updateMenu(item_menu) {
   $table.toggleClass(item_menu);
 }
 
-$name.children('a').click( (event) => {
+$name.children('a').click( () => {
   updateMenu('name_menu');
-  // $table.fadeToggle(1500);
-
 });
 
 $job.children('a').click( () => {
@@ -91,6 +87,9 @@ $title.children('a').click( () => {
   updateMenu('title_menu');
 });
 
+$contact.find('a').click( () => {
+  updateMenu('contact_menu');
+});
 
 
 // function classReset(class1, class2) {
