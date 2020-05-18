@@ -45,13 +45,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline wavy gray;
+main a:hover,
+footer a:hover {
+  text-decoration: underline wavy #C0C0C0;
 }
 
-a:active {
-  color: gray;
-}
 
 h1 {
   font-family: Yeseva;
@@ -110,7 +108,7 @@ header table {
   left: 50%;
   top: 50%;
   margin-top: -2.5%;
-  margin-left: -1%;
+  /* margin-left: -1%; */
   transform: translate(-50%, -50%);
   text-align: right;
 
@@ -130,7 +128,7 @@ header table {
 
 .name {
   padding-top: 5vw;
-  padding-left: 5vw;
+  padding-left: 3vw;
   color: #0666B9;
   background-image: linear-gradient(to right, #333 50%, rgba(255, 255, 255, 0) 50%);
   background-position: bottom;
@@ -181,25 +179,25 @@ nav span {
 
 /* scale the whole menu */
 .scale {
-  transform: scale(0.3);
+  transform: scale(0.35);
 }
 
 /* go to name menu */
 .name_menu {
   margin-top: 0;
-  margin-left: 0;
+  /* margin-left: 0; */
   left: 100%;
   top: 100%;
-  transform: translate(-67%, -70%);
+  transform: translate(-64.5%, -70%);
 }
 
 /* go to job menu */
 .job_menu {
   margin-top: 0;
-  margin-left: 0;
+  /* margin-left: 0; */
   left: 100%;
   top: 0%;
-  transform: translate(-67%, -38%);
+  transform: translate(-64.5%, -38%);
 }
 
 /* go to title menu */
@@ -220,6 +218,7 @@ nav span {
 /* augment hline fatness for the resolution */
 .hline {
   background-size: 20px 2px;
+  /* padding-sleft: 1vw; */
 }
 
 /* augment vline fatness for the resolution */
@@ -265,7 +264,7 @@ main a, footer a {
 article {
   position: relative;
   z-index: 100;
-  width: 60%;
+  width: 58%;
   text-align: center;
   transition: opacity 0.5s;
   align-items: center;
@@ -290,7 +289,7 @@ footer h3 {
 
 footer ul {
   position: relative;
-  width: 60%;
+  width: 58%;
   z-index: 100;
   margin: 0;
   font-size: 20px;
