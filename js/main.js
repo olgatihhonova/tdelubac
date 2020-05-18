@@ -13,6 +13,13 @@ const $nav = $('header').children('nav'),
       $delayed_a = $('.delay'),
       $fading_elements = $('.fadeIn');
 
+window.addEventListener('pageshow', function(event) {
+  console.log('pageshow:');
+  console.log(event);
+  event.preventDefault();
+  // window.location.reload();
+});
+
 // delay page transition
 $delayed_a.click(function(event){
     event.preventDefault();
@@ -20,16 +27,6 @@ $delayed_a.click(function(event){
     setTimeout(function() {
         window.location.href = link;
     }, 1500);
-});
-
-// reload page while hitting back browser button
-window.addEventListener( "pageshow", function ( event ) {
-  var historyTraversal = event.persisted ||
-                         ( typeof window.performance != "undefined" &&
-                              window.performance.navigation.type === 2 );
-  if ( historyTraversal ) {
-    window.location.reload(true);
-  }
 });
 
 // make elements with class fadeIn (main, footer) fade in
