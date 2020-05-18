@@ -393,4 +393,5 @@ footer li {
   font-weight: bold;
   -events: none;
   background-color: #0666B9;
+  pointer-events: none;
 }
