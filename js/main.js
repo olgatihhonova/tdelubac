@@ -13,25 +13,30 @@ const $nav = $('header').children('nav'),
       $delayed_a = $('.delay'),
       $fading_elements = $('.fadeIn');
 
-window.addEventListener('pageshow', function(event) {
-  console.log('pageshow:');
-  console.log(event);
-  event.preventDefault();
-  // window.location.reload();
-});
-
 // delay page transition
 $delayed_a.click(function(event){
-    event.preventDefault();
-    var link = $(this).attr('href');
-    setTimeout(function() {
-        window.location.href = link;
-    }, 1500);
+  event.preventDefault();
+  var link = $(this).attr('href');
+  setTimeout(function() {
+      window.location.href = link;
+  }, 1500);
+});
+
+// reload page while hitting back browser button
+// if content is hidden
+window.addEventListener( "pageshow", () => {
+  if($fading_elements.css('opacity') == 0 || $fading_elements.css('opacity') == undefined) {
+    window.location.reload();
+  }
 });
 
 // make elements with class fadeIn (main, footer) fade in
-$fading_elements.animate({opacity: 1}, 1500);
-
+// only when clicked
+if (window.performance.navigation.type === 0) {
+  $fading_elements.animate({opacity: 1}, 1500);
+} else {
+  $fading_elements.css('opacity', '1');
+};
 
 // update navigation menu
 function updateMenu(item_menu) {

@@ -275,7 +275,7 @@ article strong {
 
 footer {
   display: flex;
-  align-content: flex-end;
+  /* align-content: flex-end; */
   justify-content: center;
   text-align: center;
 }
@@ -286,6 +286,7 @@ footer h3 {
 
 footer ul {
   position: relative;
+  width: 60%;
   z-index: 100;
   margin: 0;
   font-size: 20px;
