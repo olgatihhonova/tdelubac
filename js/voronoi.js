@@ -14,7 +14,7 @@ $(document).ready(
             .classed("tooltip", true)
             .style("opacity", 0);
 
-        d3.json("./data/projects.json").then( (data) => {
+        d3.json("data/projects.json").then( (data) => {
             // Data prep
             const nestedData = nestByCategories(data);
             const hierarchicalData = d3.hierarchy(nestedData, d => d.values)

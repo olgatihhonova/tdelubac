@@ -10,7 +10,7 @@ const orbits = svg.append("g")
 const planets = svg.append("g")
     .attr("transform", "translate("+width/2+","+height/2+")");
 // Loading data
-d3.csv("../data/data.csv").then( (data) => {
+d3.csv("data/data.csv").then( (data) => {
 
     data.forEach( (d) => {
         d.orbit_radius = +d.orbit_radius;
