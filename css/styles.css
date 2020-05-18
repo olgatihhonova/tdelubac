@@ -46,7 +46,11 @@ a {
 }
 
 a:hover {
+  text-decoration: underline wavy gray;
+}
 
+a:active {
+  color: gray;
 }
 
 h1 {
@@ -177,7 +181,7 @@ nav span {
 
 /* scale the whole menu */
 .scale {
-  transform: scale(0.4);
+  transform: scale(0.3);
 }
 
 /* go to name menu */

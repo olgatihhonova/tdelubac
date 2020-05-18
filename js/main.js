@@ -25,8 +25,13 @@ $delayed_a.click(function(event){
 // reload page while hitting back browser button
 // if content is hidden
 window.addEventListener( "pageshow", () => {
-  if($fading_elements.css('opacity') == 0 || $fading_elements.css('opacity') == undefined) {
-    window.location.reload();
+  var historyTraversal = event.persisted ||
+                         ( typeof window.performance != "undefined" &&
+                              window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    if($fading_elements.css('opacity') == 0 || $fading_elements.css('opacity') == undefined) {
+      window.location.reload();
+    }
   }
 });
 
