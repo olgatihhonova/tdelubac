@@ -81,7 +81,7 @@ $title.children('a').click( () => {
 });
 
 // go to contact page
-$contact.find('a').click( () => {
+$contact.click( () => {
   updateMenu('contact_menu');
 });
 
