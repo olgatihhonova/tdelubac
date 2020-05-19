@@ -39,34 +39,46 @@ body {
   margin: 0;
   font-family: Josefin;
   font-size: 20px;
+  color: black;
+}
+
+main, footer {
+  line-height: 1.5em;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
   position: relative;
+  color: black;
 }
 
-main a::after,
-footer a::after {
+main a:hover::after,
+footer a:hover::after {
   position: absolute;
-  content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
+  content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.5em;
   width: 100%;
   left: 0;
   top: 80%;
-  /* margin-top: -0.5em; */
+  line-height: 1em;
   letter-spacing:-.4em;
 }
 
-/* main a:hover,
-footer a:hover {
-  text-decoration: underline wavy #C0C0C0;
-  -webkit-text-decoration: underline wavy #C0C0C0;
-} */
+#publi a:hover::after {
+  content: '';
+}
+
+#publi a:hover {
+  /* text-decoration: underline wavy rgba(248,201,135, 1);
+  -webkit-text-decoration: underline wavy rgba(248,201,135, 1); */
+  background-image: linear-gradient(to right, rgba(248,201,135, 1) 50%, rgba(255, 255, 255, 0) 50%);
+  background-position: bottom;
+  background-size: 15px 1px;
+  background-repeat: repeat-x;
+}
 
 
 h1 {
@@ -326,7 +338,6 @@ nav span {
 }
 
 main {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -336,7 +347,7 @@ main span {
 }
 
 main p {
-  line-height: 1.5em;
+  /* line-height: 1.5em; */
   text-align: justify;
   text-justify: inter-word;
 }
@@ -432,9 +443,17 @@ footer li {
 
 #publi {
   /* font-size: 25px; */
-  line-height: 2em;
+  /* line-height: 2em; */
   text-align: left;
   background-color: rgba(255, 255, 255, 0.5);
+}
+#publi li {
+  margin-bottom: 1.2em;
+}
+
+.alpha {
+  font-size: 17px;
+  font-weight: 300;
 }
 
 #data-science table {
