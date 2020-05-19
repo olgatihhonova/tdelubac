@@ -61,7 +61,8 @@ footer a:hover {
 } */
 
 main a:hover::after,
-footer a:hover::after {
+footer a:hover::after,
+#voronoi .tooltip::after {
   position: absolute;
   content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>>';
   white-space: nowrap;
@@ -527,10 +528,12 @@ footer li {
 #voronoi .tooltip {
   position: absolute;
   text-align: center;
-  font-size: 40px;
-  color: white;
-  font-weight: bold;
+  font-size: 25px;
+  /* font-weight: bold; */
+  padding: 5px;
+  /* padding-top: 10px; */
+  /* color: white; */
+  background-color: rgba(255, 255, 255, 0.7);
   -events: none;
-  background-color: #0666B9;
   pointer-events: none;
 }

@@ -139,7 +139,7 @@ $(document).ready(
 
         const colors = {
             "Web": "#0666B9",
-            "Python": "#FFCB47  ",
+            "Python": "#FFCB47",
             "3D Printing": "#f97f67",
             "DataViz": "#0D9099",
             "Deep Learning": "#6a4c93"
