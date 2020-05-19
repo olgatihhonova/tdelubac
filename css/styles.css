@@ -43,12 +43,31 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
 }
 
-main a:hover,
+main a::after,
+footer a::after {
+  content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.5em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  /* bottom: 10%; */
+  top: 80%;
+  /* margin-top: -0.5em; */
+  letter-spacing:-.4em;
+}
+
+/* main a:hover,
 footer a:hover {
   text-decoration: underline wavy #C0C0C0;
-}
+  -webkit-text-decoration: underline wavy #C0C0C0;
+} */
 
 
 h1 {
@@ -61,6 +80,7 @@ header h1 {
   margin: 0.15vw 2vw 1vw 2vw;
   font-size: 5vw;
   white-space: nowrap;
+  display: inline-table;
 }
 
 header span {
@@ -145,6 +165,71 @@ header table {
 .job {
   color: #0D9099;
 }
+
+.enchance {
+  transform-origin: top right;
+  transform: scale(1.3);
+  /* display: inline-table; */
+  /* border-bottom: 3px dotted rgba(13,144,153, 1); */
+}
+
+/* nav .title h1,
+nav .name h1, */
+nav .job h1 {
+  /* background-color: rgba(13,144,153, 0.2); */
+  /* display: inline-table; */
+  /* -webkit-text-stroke: 2px white; */
+  /* text-shadow:
+       1px 1px 0 black,
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black; */
+  /* border-bottom: 3px wavy rgba(13,144,153, 1); */
+  /* text-decoration: underline wavy rgba(13,144,153, 1); */
+  /* #C0C0C0; */
+  /* background-color: WhiteSmoke; */
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, WhiteSmoke 90%); */
+  /* border-radius: 5%; */
+  /* box-shadow: -5px 5px gray, -2px 2px gray, -1px 1px gray; */
+  /* border: 1px solid gray; */
+}
+
+.enchance::after {
+  /* content: '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'; */
+  /* content: '<><><><><><><><><><><><><><><><><><><><><><><><><><>'; */
+  content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
+  white-space: nowrap;
+  font-size: 2vw;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  top:100%;
+  margin-top: -.5em;
+  letter-spacing:-.25em;
+}
+
+
+nav .name h1:hover {
+  /* text-decoration: underline solid rgba(6,102,185, 1); */
+  /* border-bottom: 3px solid rgba(6,102,185, 1); */
+
+}
+nav .title h1:hover {
+  text-decoration: underline wavy rgba(248,201,135, 1);
+}
+
+nav .title h1 {
+  /* background-color: rgba(248,201,135, 0.25); */
+}
+nav .name h1 {
+  /* background-color: rgba(6,102,185, 0.2); */
+}
+nav .job h1 {
+  /* background-color: rgba(13,144,153, 0.2); */
+}
+
 
 .shadow table {
   position: fixed;
