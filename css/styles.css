@@ -50,14 +50,13 @@ a {
 
 main a::after,
 footer a::after {
+  position: absolute;
   content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.5em;
-  position: absolute;
   width: 100%;
   left: 0;
-  /* bottom: 10%; */
   top: 80%;
   /* margin-top: -0.5em; */
   letter-spacing:-.4em;
