@@ -11,7 +11,14 @@ const $nav = $('header').children('nav'),
       $dixi_span = $table.find('.dixi'),
       $contact = $('.ref-contact'),
       $delayed_a = $('.delay'),
-      $fading_elements = $('.fadeIn');
+      $fading_elements = $('.fadeIn'),
+      $enchance_name = $name.find('.enchance'),
+      $enchance_job = $job.find('.enchance'),
+      $enchance_title = $title.find('.enchance'),
+      $enchance_all = $('.enchance');
+
+
+console.log($enchance_all);
 
 // delay page transition
 $delayed_a.click(function(event){
@@ -43,8 +50,18 @@ if (window.performance.navigation.type === 0) {
   $fading_elements.css('opacity', '1');
 };
 
+// enchance menu items when active
+$enchance_name.addClass('enchance_name');
+$enchance_job.addClass('enchance_job');
+$enchance_title.addClass('enchance_title');
+
+
 // update navigation menu
 function updateMenu(item_menu) {
+  // remove active menu item enchancement
+  $enchance_all.addClass('no_enchance');
+
+  // make the article fade away
   $fading_elements.animate({opacity: 0}, 150);
 
   if (!$table.hasClass('') && !$table.hasClass(item_menu)) {
