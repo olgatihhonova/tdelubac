@@ -51,6 +51,7 @@ a {
   cursor: pointer;
   position: relative;
   color: black;
+  white-space: nowrap;
 }
 
 /* main a:hover,
@@ -73,15 +74,26 @@ footer a:hover::after {
   letter-spacing:-.4em;
 }
 
+#publi a {
+  white-space: normal;
+}
+
 #publi a:hover::after {
   content: '';
 }
 
 #publi a:hover {
-  background-image: linear-gradient(to right, rgba(248,201,135, 1) 50%, rgba(255, 255, 255, 0) 50%);
-  background-position: bottom;
+  /* background-image: linear-gradient(to right, rgba(248,201,135, 1) 50%, rgba(255, 255, 255, 0) 50%); */
+  /*background-position: bottom;
   background-size: 15px 1px;
+  background-repeat: repeat-x; */
+  padding-bottom: 5px;
+  background-image: url('../images/fancy_border.png');
+  /* background-position: 0% 120%; */
+  background-position: bottom;
+  background-size: 110px;
   background-repeat: repeat-x;
+  overflow: visible;
 }
 
 
@@ -181,12 +193,8 @@ header table {
   color: #0D9099;
 }
 
-.job h1 {
-
-}
-
 .enchance {
-  transition: transform 1s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .enchance_name {
   transform-origin: bottom right;
@@ -205,11 +213,12 @@ header table {
   /* transition: none; */
 }
 
-/* nav h1:hover {
-  color: gray;
-} */
+nav h1:hover {
+  /* font-style: italic; */
+  /* transition: none; */
+}
 
-/* nav h1::after {
+/* nav h1:hover::after {
   position: absolute;
   content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>';
   white-space: nowrap;
