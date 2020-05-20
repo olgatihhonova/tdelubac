@@ -69,6 +69,7 @@ footer a::after,
 #voronoi .tooltip::after {
   position: absolute;
   content: '<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>><<>><<>><<>><<>><<>>';
+  color: black;
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.5em;
@@ -99,8 +100,7 @@ footer a:hover,
   background-image: url('../images/border_green.png');
 }
 #about a:hover,
-.footer-about a:hover,
-#voronoi .tooltip {
+.footer-about a:hover {
   background-image: url('../images/border_blue.png');
 }
 #phd a:hover,
@@ -108,7 +108,9 @@ footer a:hover,
 #publi a:hover {
   background-image: url('../images/border_yellow.png');
 }
-
+#voronoi .tooltip {
+  background-image: url('../images/border_black.png');
+}
 
 h1 {
   font-family: Yeseva;
