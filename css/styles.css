@@ -192,16 +192,18 @@ header table {
 }
 
 .name {
+  padding: 5px; /* important for line not to disaapear */
   padding-top: 5vw;
   padding-left: 4vw;
   color: #0666B9;
   background-image: linear-gradient(to right, #333 50%, rgba(255, 255, 255, 0) 50%);
-  background-position: bottom;
+  background-position: 0% 98%;
   background-size: 20px 1px;
   background-repeat: repeat-x;
 }
 
 .title {
+  padding: 5px; /* important for line not to disaapear */
   padding-top: 5vw;
   color: #F8C987;
   border-left: 1px solid black;
@@ -387,13 +389,13 @@ nav span {
 
 /* augment hline fatness for the resolution */
 .hline {
-  background-size: 20px 2px;
+  background-size: 20px 2.9px;
   /* padding-sleft: 1vw; */
 }
 
 /* augment vline fatness for the resolution */
 .vline {
-  border-left: 3px solid black;
+  border-left: 2.9px solid black;
 }
 
 /* rotate title text */
