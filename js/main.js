@@ -16,32 +16,7 @@ const $nav = $('header').children('nav'),
       $enchance_job = $job.find('.enchance'),
       $enchance_title = $title.find('.enchance'),
       $enchance_all = $('.enchance');
-
-
-console.log(Math.ceil(0.56));
-
-
-// $tbody.css('width', 'auto');
-// // $tbody.css('width', $tbody.width());
-// setTimeout(() => {
-// $tbody.css('width', $tbody.width());
-// }, 100);
-//
-// // adapt the hardcoded width when window is resized
-// let resizeTimer;
-// $(window).resize( () => {
-//
-//  // lef the width be auto during the resize event
-//  $tbody.css('width', 'auto');
-//  // hardcode the width at the end of resize event
-//  // timeout should be set equal to animation duration
-//  clearTimeout(resizeTimer);
-//  resizeTimer = setTimeout(() => {
-//    $tbody.css('width', $tbody.width());
-//  }, 1500);
-// });
-
-
+      
 
 // delay page transition
 $delayed_a.click(function(event){

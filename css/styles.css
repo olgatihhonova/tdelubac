@@ -85,18 +85,20 @@ footer a::after,
   content: '';
 } */
 
+/* #voronoi .tooltip, */
 main a:hover,
 footer a:hover,
-/* #voronoi .tooltip, */
 #publi a:hover {
-  padding-bottom: 5px;
+  border-bottom: 1px solid;
+
+  /* padding-bottom: 5px;
   background-position: bottom;
   background-size: 120px;
   background-repeat: repeat-x;
-  overflow: visible;
+  overflow: visible; */
 }
 
-#data-science a:hover,
+/* #data-science a:hover,
 .footer-ds a:hover {
   background-image: url('../images/border_green.png');
 }
@@ -108,7 +110,7 @@ footer a:hover,
 .footer-phd a:hover,
 #publi a:hover {
   background-image: url('../images/border_yellow.png');
-}
+} */
 /* #voronoi .tooltip {
   background-image: url('../images/border_black.png');
 } */
@@ -193,7 +195,7 @@ header table {
 }
 
 .name {
-  padding: 5px; /* important for line not to disaapear */
+  padding: 5px; /* important for line to not disaapear */
   padding-top: 5vw;
   padding-left: 4vw;
   color: #0666B9;
@@ -204,7 +206,7 @@ header table {
 }
 
 .title {
-  padding: 5px; /* important for line not to disaapear */
+  padding: 5px; /* important for line to not disaapear */
   padding-top: 5vw;
   color: #F8C987;
   border-left: 0.05rem solid black;
@@ -466,7 +468,7 @@ footer ul {
   margin: 0;
   font-size: 20px;
   list-style: none;
-  padding-top: 10vh;
+  padding-top: 15vh;
   padding-bottom: 10vh;
   padding-left: 0;
   background-color: rgba(255, 255, 255, 0.5);
@@ -517,6 +519,23 @@ footer li {
   color: #6a4c93;
 }
 
+footer ul::after {
+  position: absolute;
+  content: "------------------ <<>><<>><<>> ------------------";
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.8em;
+  width: 100%;
+  left: 0;
+  top: 12vh;
+  line-height: 1em;
+  letter-spacing:-0.22em;
+}
+
+
+
+
 
 #publi {
   /* font-size: 25px; */
@@ -538,7 +557,7 @@ footer li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 7vh;
-  /* margin-bottom: 3vh; */
+  margin-bottom: 1.2em;
 }
 
 #data-science table, #data-science th, #data-science td {
