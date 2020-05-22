@@ -25,6 +25,7 @@
 
 :root {
   --tbody-width: 790.5px;
+  font-size: 20px;
 }
 
 html {
@@ -198,7 +199,7 @@ header table {
   color: #0666B9;
   background-image: linear-gradient(to right, #333 50%, rgba(255, 255, 255, 0) 50%);
   background-position: 0% 98%;
-  background-size: 20px 1px;
+  background-size: 20px 0.05rem;
   background-repeat: repeat-x;
 }
 
@@ -206,7 +207,7 @@ header table {
   padding: 5px; /* important for line not to disaapear */
   padding-top: 5vw;
   color: #F8C987;
-  border-left: 1px solid black;
+  border-left: 0.05rem solid black;
 }
 
 .job {
@@ -389,13 +390,13 @@ nav span {
 
 /* augment hline fatness for the resolution */
 .hline {
-  background-size: 20px 2.9px;
+  background-size: 20px 0.15rem;
   /* padding-sleft: 1vw; */
 }
 
 /* augment vline fatness for the resolution */
 .vline {
-  border-left: 2.9px solid black;
+  border-left: 0.15rem solid black;
 }
 
 /* rotate title text */
