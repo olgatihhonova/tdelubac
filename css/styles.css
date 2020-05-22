@@ -86,7 +86,7 @@ footer a::after,
 
 main a:hover,
 footer a:hover,
-#voronoi .tooltip,
+/* #voronoi .tooltip, */
 #publi a:hover {
   padding-bottom: 5px;
   background-position: bottom;
@@ -108,9 +108,9 @@ footer a:hover,
 #publi a:hover {
   background-image: url('../images/border_yellow.png');
 }
-#voronoi .tooltip {
+/* #voronoi .tooltip {
   background-image: url('../images/border_black.png');
-}
+} */
 
 h1 {
   font-family: Yeseva;
@@ -240,15 +240,15 @@ nav .title h1 {
 nav .name h1:hover,
 nav .job h1:hover,
 nav .title h1:hover {
-  /* font-style: italic; */
+  font-style: italic;
   /* transition: none; */
   /* padding-bottom: 0.5vw; */
-  background-position: bottom;
+  /* background-position: bottom;
   background-size: 25vw;
   background-repeat: repeat-x;
-  overflow: visible;
+  overflow: visible; */
 }
-nav .name h1:hover {
+/* nav .name h1:hover {
   background-image: url('../images/border_blue.png');
 }
 nav .job h1:hover {
@@ -256,7 +256,7 @@ nav .job h1:hover {
 }
 nav .title h1:hover {
   background-image: url('../images/border_yellow.png');
-}
+} */
 
 
 /* nav h1:hover::after {
@@ -572,7 +572,7 @@ footer li {
   font-size: 23px;
   /* font-weight: bold; */
   padding: 5px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
   /* color: #0666B9; */
   background-color: rgba(255, 255, 255, 0.9);
   /* background-color: white; */
