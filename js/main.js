@@ -16,16 +16,48 @@ const $nav = $('header').children('nav'),
       $enchance_job = $job.find('.enchance'),
       $enchance_title = $title.find('.enchance'),
       $enchance_all = $('.enchance');
-      
+
+
+
+let resizeTimer;
+$(window).resize( () => {
+  console.log(window.innerWidth);
+   // clearTimeout(resizeTimer);
+   // resizeTimer = setTimeout(() => {
+   //   console.log(window.innerWidth);
+   // }, 1500);
+ });
+
 
 // delay page transition
-$delayed_a.click(function(event){
-  event.preventDefault();
-  var link = $(this).attr('href');
-  setTimeout(function() {
-      window.location.href = link;
-  }, 1500);
-});
+function delayPageTransition(smallScreen=false) {
+  $delayed_a.click(function(event){
+    let delayTime;
+    event.preventDefault();
+    const link = $(this).attr('href');
+    const currentPath = window.location.pathname;
+    // make delays small if in small screen mode
+    if (smallScreen) {
+      delayTime = 150;
+      // the delay stays long for transitions from and to the main menu
+      if (currentPath==='/index.html' || currentPath==='/' || link==='index.html') {
+        delayTime = 1500;
+      }
+    } else {
+      delayTime = 1500; // long delays in normal mode
+    }
+    setTimeout(function() {
+        window.location.href = link;
+    }, delayTime);
+  });
+}
+
+if (window.innerWidth>768) {
+  delayPageTransition();
+} else {
+  delayPageTransition(smallScreen=true);
+}
+
 
 // reload page while hitting back browser button
 // if content is hidden

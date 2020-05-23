@@ -153,7 +153,7 @@ header a {
   background-repeat: no-repeat;
 }
 
-.no-overflow {
+nav {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -176,7 +176,6 @@ header table {
   left: 50%;
   top: 50%;
   margin-top: -2.5%;
-  /* margin-left: -1%; */
   transform: translate(-50%, -50%);
   text-align: right;
 
@@ -233,13 +232,6 @@ header table {
 }
 .no_enchance {
   transform: scale(1);
-  /* transition: none; */
-}
-
-nav .name h1,
-nav .job h1,
-nav .title h1 {
-  /* background-position: bottom; */
 }
 
 nav .name h1:hover,
@@ -360,7 +352,6 @@ nav span {
 /* go to name menu */
 .name_menu {
   margin-top: 0;
-  /* margin-left: 0; */
   left: 100%;
   top: 100%;
   transform: translate(-64.5%, -70%);
@@ -369,7 +360,6 @@ nav span {
 /* go to job menu */
 .job_menu {
   margin-top: 0;
-  /* margin-left: 0; */
   left: 100%;
   top: 0%;
   transform: translate(-64.5%, -38%);
@@ -414,6 +404,41 @@ nav span {
 
 .fadeIn {
   opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: absolute;
+  }
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    margin-top: 0;
+    left: 50%;
+    top: 0%;
+    transform: translate(-45%, -25%);
+  }
+  .collapse {
+    font-size: 3.5vw;
+    opacity: 1;
+  }
+  .full {
+    font-size: 0;
+  }
+  .scale {
+    transform: scale(0.6);
+  }
+  .hline {
+    background-size: 20px 0.09rem;
+  }
+  .vline {
+    border-left: 0.09rem solid black;
+  }
+  main, footer {
+    position: relative;
+    top: 15vw;
+  }
 }
 
 main {
@@ -524,7 +549,7 @@ footer ul::after {
   content: "------------------ <<>><<>><<>> ------------------";
   color: black;
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 0.8em;
   width: 100%;
   left: 0;
@@ -554,11 +579,36 @@ footer ul::after {
 
 #data-science table {
   /* background-color: rgba(255, 255, 255, 0.5); */
+  table-layout:fixed;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 7vh;
   margin-bottom: 1.2em;
+  font-size: 20px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
+
+@media screen and (max-width: 1000px) {
+  #data-science table {
+    font-size: 2vw;
+  }
+}
+
+#data-science td {
+  /* -ms-word-break: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; */
+
+  /* overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto; */
+}
+
 
 #data-science table, #data-science th, #data-science td {
   border: 1px solid black;
