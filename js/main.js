@@ -35,12 +35,14 @@ function delayPageTransition(smallScreen=false) {
     let delayTime;
     event.preventDefault();
     const link = $(this).attr('href');
-    const currentPath = window.location.pathname;
+    const currentUrl = window.location.href;
+    const currentPath = currentUrl.split('/').pop();
+    console.log(currentPath);
     // make delays small if in small screen mode
     if (smallScreen) {
       delayTime = 150;
       // the delay stays long for transitions from and to the main menu
-      if (currentPath==='/index.html' || currentPath==='/' || link==='index.html') {
+      if (currentPath==='index.html' || currentPath==='' || link==='index.html') {
         delayTime = 1500;
       }
     } else {
@@ -90,7 +92,6 @@ $enchance_title.addClass('enchance_title');
 function updateMenu(item_menu) {
   // remove active menu item enchancement
   $enchance_all.addClass('no_enchance');
-
   // make the article fade away
   $fading_elements.animate({opacity: 0}, 150);
 
