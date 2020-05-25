@@ -407,6 +407,15 @@ nav span {
 }
 
 @media screen and (max-width: 800px) {
+  header h1 {
+    font-size: 8vw;
+  }
+  header span {
+    font-size: 5.6vw;
+  }
+  .name {
+    /* padding-left: 0vw; */
+  }
   nav {
     position: absolute;
   }
@@ -427,17 +436,17 @@ nav span {
     font-size: 0;
   }
   .scale {
-    transform: scale(0.6);
+    transform: scale(0.8);
   }
   .hline {
-    background-size: 20px 0.09rem;
+    background-size: 20px 0.065rem;
   }
   .vline {
-    border-left: 0.09rem solid black;
+    border-left: 0.065rem solid black;
   }
   main, footer {
     position: relative;
-    top: 15vw;
+    top: 17vw;
   }
 }
 
