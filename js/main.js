@@ -68,7 +68,7 @@ window.addEventListener( "pageshow", () => {
                          ( typeof window.performance != "undefined" &&
                               window.performance.navigation.type === 2 );
   if ( historyTraversal ) {
-    if($fading_elements.css('opacity') == 0 || $fading_elements.css('opacity') == undefined) {
+    if($fading_elements.css('opacity') < 1 || $fading_elements.css('opacity') == undefined) {
       window.location.reload();
     }
   }
