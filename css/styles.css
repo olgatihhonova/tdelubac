@@ -407,12 +407,6 @@ nav span {
 }
 
 @media screen and (max-width: 800px) {
-  header h1 {
-    font-size: 8vw;
-  }
-  header span {
-    font-size: 5.6vw;
-  }
   nav {
     position: absolute;
   }
@@ -423,10 +417,8 @@ nav span {
     margin-top: 0;
     left: 50%;
     top: 0%;
-    transform: translate(-45%, -20%);
   }
   .collapse {
-    font-size: 5.6vw;
     opacity: 1;
   }
   .full {
@@ -443,9 +435,45 @@ nav span {
   }
   main, footer {
     position: relative;
-    top: 17vw;
+  }
+  article {
+    width: 85%;
   }
 }
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  header h1 {
+    font-size: 8vw;
+  }
+  header span,
+  .collapse  {
+    font-size: 5.6vw;
+  }
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    transform: translate(-45%, -18%);
+  }
+  main, footer {
+    top: 22vw;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    transform: translate(-45%, -25%);
+  }
+  main, footer {
+    top: 16vw;
+  }
+}
+
+
+
 
 main {
   display: flex;
@@ -474,13 +502,6 @@ article {
   transition: opacity 0.5s;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (max-width: 800px) {
-  article {
-    margin-top: 30px;
-    width: 85%;
-  }
 }
 
 article strong {
