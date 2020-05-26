@@ -406,75 +406,6 @@ nav span {
   opacity: 0;
 }
 
-@media screen and (max-width: 800px) {
-  nav {
-    position: absolute;
-  }
-  .name_menu,
-  .job_menu,
-  .title_menu,
-  .contact_menu {
-    margin-top: 0;
-    left: 50%;
-    top: 0%;
-  }
-  .collapse {
-    opacity: 1;
-  }
-  .full {
-    font-size: 0;
-  }
-  .scale {
-    transform: scale(0.7);
-  }
-  .hline {
-    background-size: 20px 0.065rem;
-  }
-  .vline {
-    border-left: 0.065rem solid black;
-  }
-  main, footer {
-    position: relative;
-  }
-  article {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 800px) and (orientation: portrait) {
-  header h1 {
-    font-size: 8vw;
-  }
-  header span,
-  .collapse  {
-    font-size: 5.6vw;
-  }
-  .name_menu,
-  .job_menu,
-  .title_menu,
-  .contact_menu {
-    transform: translate(-45%, -18%);
-  }
-  main, footer {
-    top: 22vw;
-  }
-}
-
-@media screen and (max-width: 800px) and (orientation: landscape) {
-  .name_menu,
-  .job_menu,
-  .title_menu,
-  .contact_menu {
-    transform: translate(-45%, -25%);
-  }
-  main, footer {
-    top: 16vw;
-  }
-}
-
-
-
-
 main {
   display: flex;
   justify-content: center;
@@ -707,4 +638,70 @@ footer ul::after {
   /* background-color: white; */
   -events: none;
   pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: absolute;
+  }
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    margin-top: 0;
+    left: 50%;
+    top: 0%;
+  }
+  .collapse {
+    opacity: 1;
+  }
+  .full {
+    font-size: 0;
+  }
+  .scale {
+    transform: scale(0.7);
+  }
+  .hline {
+    background-size: 20px 0.065rem;
+  }
+  .vline {
+    border-left: 0.065rem solid black;
+  }
+  main, footer {
+    position: relative;
+  }
+  article {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  header h1 {
+    font-size: 8vw;
+  }
+  header span,
+  .collapse  {
+    font-size: 5.6vw;
+  }
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    transform: translate(-45%, -18%);
+  }
+  main, footer {
+    top: 25vw;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .name_menu,
+  .job_menu,
+  .title_menu,
+  .contact_menu {
+    transform: translate(-45%, -25%);
+  }
+  main, footer {
+    top: 16vw;
+  }
 }
