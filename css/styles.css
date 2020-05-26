@@ -413,9 +413,6 @@ nav span {
   header span {
     font-size: 5.6vw;
   }
-  .name {
-    /* padding-left: 0vw; */
-  }
   nav {
     position: absolute;
   }
@@ -429,7 +426,7 @@ nav span {
     transform: translate(-45%, -20%);
   }
   .collapse {
-    font-size: 3.5vw;
+    font-size: 5.6vw;
     opacity: 1;
   }
   .full {
