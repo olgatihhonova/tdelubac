@@ -609,7 +609,7 @@ footer ul::after {
 
 @media screen and (max-width: 1000px) {
   #data-science table {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
@@ -633,6 +633,12 @@ footer ul::after {
 
 #data-science th, #data-science td {
   padding: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  #data-science th, #data-science td {
+    padding: 5px;
+  }
 }
 
 #data-science th {
