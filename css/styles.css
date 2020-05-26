@@ -426,7 +426,7 @@ nav span {
     margin-top: 0;
     left: 50%;
     top: 0%;
-    transform: translate(-45%, -25%);
+    transform: translate(-45%, -20%);
   }
   .collapse {
     font-size: 3.5vw;
@@ -631,6 +631,20 @@ footer ul::after {
   border-collapse: collapse;
 }
 
+#data-science table ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+#data-science table li {
+  list-style-type: none;
+  padding-bottom: 7px;
+}
+
+#data-science table li:last-child {
+  padding-bottom: 0;
+}
+
 #data-science th, #data-science td {
   padding: 15px;
 }
@@ -638,6 +652,9 @@ footer ul::after {
 @media screen and (max-width: 1000px) {
   #data-science th, #data-science td {
     padding: 5px;
+  }
+  #data-science td {
+    line-height: 1.5em;
   }
 }
 
