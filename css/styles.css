@@ -436,7 +436,7 @@ nav span {
     font-size: 0;
   }
   .scale {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   .hline {
     background-size: 20px 0.065rem;
@@ -481,6 +481,7 @@ article {
 
 @media screen and (max-width: 800px) {
   article {
+    margin-top: 30px;
     width: 85%;
   }
 }
